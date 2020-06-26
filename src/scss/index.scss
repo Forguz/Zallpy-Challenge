@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background: url("../assets/background.jpg") center fixed no-repeat;
+  background-size: cover;
+  padding: 40px 20px;
+  backdrop-filter: blur(2px);
+}
+
+form {
+  padding: 40px;
+  color: #131212;
+  // border: 1px solid black;
+  background-color: #f3f3f5b4;
+  border-radius: 10px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.103),0 6px 20px 0 rgba(0, 0, 0, 0.116);
+}
+
+.spanError {
+  color: #C53030;
+  margin-top: 10px;
+  display: none;
+  font-weight: bold;
+}
+
+.error {
+  border: 2px solid #C53030;
+}
