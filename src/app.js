@@ -66,13 +66,14 @@ async function submitForm(e) {
   }
 
   const validation = await validate(schema, formData);
-  console.log(validation);
+
   handleInputErrors(validation, formData);
 
   if(!validation.isValid()) {
     document.querySelector('#span_error').style.display = 'block';
   } else {
     document.querySelector('#span_error').style.display = 'none';
+    console.log("dados corretos!", formData);
   }
 }
 
